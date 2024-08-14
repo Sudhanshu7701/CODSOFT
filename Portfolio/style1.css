@@ -1,0 +1,312 @@
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+    background: #f4f4f4;
+    background-image: url("bg1.png");
+    /* background-position: center center; */
+    
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    
+}
+
+header {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 2em 0;
+    background-image: url("fungrad.jpg");
+    background-position:center center; 
+    
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3em;
+}
+
+header p {
+    margin: 0.5em 0 0;
+    font-size: 1.5em;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 5px;
+    display: flex;
+    justify-content:center;
+    margin-top: 1em;
+    transform: translateY(68px);
+    gap: 50px;
+   
+    
+}
+
+header nav ul li {
+    margin: 0 15px;
+    
+    
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s;
+    
+}
+
+header nav ul li a:hover {
+    color: #ddd;
+}
+
+section {
+    padding: 4em 0;
+    background: white;
+    margin: 2em 0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+#about {
+    background-image: url("forms-colored-blurry-spot-9.png");
+    background-repeat: no-repeat;
+    background-position: bottom left ; 
+    
+    
+}
+
+section  .about-content p{
+    font-size: 20px;
+    font-family:'Times New Roman', Times, serif;
+    
+    letter-spacing: 1px;
+    line-height: 30px;
+    
+    
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 1em;
+    font-size: 2.5em;
+}
+
+#about .about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#about img {
+    max-width: 200px;
+    border-radius: 50%;
+    margin: 0 20px;
+}
+
+#about p {
+    max-width: 600px;
+    text-align: center;
+}
+
+#skills{
+    background-image: url("bluegrad.webp");
+    background-position:center center;
+    
+    
+}
+
+#skills .skills-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+}
+
+#skills li {
+    background: #eee;
+    margin: 10px;
+    padding: 15px 20px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background 0.3s;
+}
+
+#skills li:hover {
+    background: #ddd;
+}
+
+#projects{
+    background-image: url("bg2.jpg");
+    background-position: center center;
+}
+
+#projects .projects-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    
+}
+
+#projects .project {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#projects .project:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    
+}
+
+#projects img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* .sketchfab-embed-wrapper {
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.sketchfab-embed-wrapper iframe {
+    width: 100%;
+    height: 400px;
+} */
+#resume{
+    background-image: url("bluegrad.webp");
+    background-position:center center;
+    
+}
+
+
+
+#resume a {
+    display: flex;
+    width: 250px;
+    padding: 10px 20px;
+    background: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+    justify-content: center;
+    transform: translateX(360px);
+    
+   
+}
+
+#resume a:hover {
+    background: #555;
+}
+
+
+
+#contact p {
+    text-align: center;
+    margin: 0.5em 0;
+    font-size: 18px;
+    line-height: 23px;
+    transform: translate(22px,-15px);
+    
+    
+}
+
+#contact a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s;
+    
+}
+
+#contact a:nth-child(2){
+    font-size: 18px;
+    transform: translate(2px, -15px); 
+}
+
+#contact a:hover {
+    color: #555;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+    
+}
+
+
+.social-links .image{
+    position: relative;
+    transform: translateX(300px);
+    /* transform: translateY(-2px); */
+    height: 28px;
+    bottom: 4px;
+    
+    
+}
+
+.social-links .image1{
+    position: absolute;
+    transform: translateX(150px);
+    
+    height: 28px;
+    bottom: -52px;
+    
+}
+
+.social-links .image2{
+    position: relative;
+    transform: translateX(710px);
+    height: 28px;
+    bottom: 4px;
+    
+}
+
+.social-links .whatsapp{
+    height: 28px;
+    transform: translate(73px,-18px);
+}
+.social-links a {
+    margin: 0 80px;
+    font-size: 1.2em;
+    color: #333;
+    transition: color 0.3s;
+    text-decoration: none;
+    transform: translateX(140px);
+    
+    
+}
+
+.social-links a:hover {
+    color: #555;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+footer p {
+    margin: 0;
+}
